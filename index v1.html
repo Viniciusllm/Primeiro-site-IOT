@@ -1,6 +1,7 @@
 <!DOCTYPE html> <!-- Aqui definimos o tipo de documento-->
 <html lang="pt-br">
-    <!-- A tag head é utilizada para configurar a nossa pagina-->
+<!-- A tag head é utilizada para configurar a nossa pagina-->
+
 <head>
     <!-- Esta tag server para dizer quais tipo de caracteres vamos utilizar no site (utf-8)-->
     <meta charset="UTF-8">
@@ -9,14 +10,15 @@
     <!--Titulo da pagina, exibido na guia do site-->
     <title>Quem sou eu!</title>
 </head>
-    <!--Cabeçalho-->
+<!--Cabeçalho-->
+
 <body>
     <!-- A tag body é usada para trazer as informações que vão aparecer dentro do site-->
     <header>
         <!-- As tags de h são para titulos e elas definem a importancia, o peso, daquele titulo dentro da pagina, eles variam de h1 a h6, onde h1 é o mais importante e o h6 é o menos importante-->
         <h1>Titulo com h1</h1>
         <!-- A tag <p> </p> serve para criar um paragrafo dentro da pagina-->
-         <p>Uma página simples para me apresentar o mundo!</p>
+        <p>Uma página simples para me apresentar o mundo!</p>
     </header>
     <!--Corpo-->
     <main>
@@ -28,37 +30,152 @@
                 alt ==> É a descrição desta imagem 
                 widht ==> ajusta a largura da imagem
                 -->
-                
-            <img src="https://i.pinimg.com/736x/9d/b1/aa/9db1aa9cea0fae062e8bc6109899f0b1.jpg" alt="taxadd"
-             width="150">
+
+            <img src="https://i.pinimg.com/736x/9d/b1/aa/9db1aa9cea0fae062e8bc6109899f0b1.jpg" alt="taxadd" width="150">
             <p>
                 <!-- A tag strong serve para destacar uma palavra -->
-                 <!-- A tag br server para quebrar linha -->
-                 Olá! Eu sou <strong>Vinícius</strong> e adoro aprender Sobre tecnologia. <br> Acredito que programar é uma forma de contar historias e resolver probelmas do mundo real. <br> Nesta pagina, voce vai conhecer um pouco mais sobre mim.
+                <!-- A tag br server para quebrar linha -->
+                Olá! Eu sou <strong>Vinícius</strong> e adoro aprender Sobre tecnologia. <br> Acredito que programar é
+                uma forma de contar historias e resolver probelmas do mundo real. <br> Nesta pagina, voce vai conhecer
+                um pouco mais sobre mim.
             </p>
-            </section>
-            <section>
-                <h2>Interesses</h2>
-                <p>Algumas coisas que me fazem brilhar os olhos:</p>
-                <!-- Para criar listas podemos usar as  seguintes tags:
+        </section>
+        <section>
+            <h2>Interesses</h2>
+            <p>Algumas coisas que me fazem brilhar os olhos:</p>
+            <!-- Para criar listas podemos usar as  seguintes tags:
                  ul ==> listas sem ordem
                  ol ==> listas ordenadas
                  Cada item dentro de um lista precisa vir dentro de uma tag li -->
-                <ul>
-                    <li>Programção de JS</li>
-                    <li>Arduino</li>
-                    <li>Fluxograma</li>
-                    <li>Projetos reais</li>
-                    <li>projetos de baixo custo usando automação</li>
-                </ul>
-            
+            <ul>
+                <li>Programção de JS</li>
+                <li>Arduino</li>
+                <li>Fluxograma</li>
+                <li>Projetos reais</li>
+                <li>projetos de baixo custo usando automação</li>
+            </ul>
+
         </section>
-        <section></section>
+        <section>
+            <h2>Objetivos</h2>
+            <p>Metas para os proximos meses:</p>
+            <ol>
+                <li>Aprender a desenvolver sites usando HTML, CSS , JAVA e JS</li>
+                <li>Aprender automoção usando ESP32</li>
+                <li>Aprender redes com cabeamento estruturado </li>
+            </ol>
+        </section>
+
+
+        <section>
+            <form action="#">
+                <h2>Contatos</h2>
+                <p>Preencha o formulário para falar comigo:</p>
+
+                <!-- A tag <form> cria um formulário que pode ser usado para coletar informações do usuario.
+                    O atributo "action" define para onde os dados serão enviados, como ainda não temos isso definido deixamos como "#" 
+                    O atributo "method" define como os dados serão enviados, o "post" é o mais comum e significa que esses dados vão ser salvos em algum local. -->
+
+                <form action="#">
+
+                    <!-- A tag <label> serve para descrever o campo, ou seja, criar uma legenda.
+                        O atributo "for" deve sempre ter o mesmo valor que o "id" do campo que ela descreve
+                        Isso faz com que a acessibilidade do site fique melhor, porque ao clicar no texto, o campo de digitação é selecionado. -->
+
+                    <label for="nome">Nome:</label>
+                    <br>
+
+                    <!-- A tag <input> cria um campo de entrada , uma caixa para o usuario digitar algo.
+                     O type serve para indicar qual o tipo de valor que o compo vai receber.
+                     O name é o nome da informação que va iser enviada no formulário.
+                     O id é um indentificador UNICO usado para vincular o campo com o <label>.
+                    O required faz com que o campo seja obrigatório para o envio. -->
+
+                    <input type="text" name="nome" id="nome" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" name="email" id="email" required>
+                    <br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <input type="text" name="mensagem" id="mensagem" required>
+                    <br>
+                    <!-- A tag <button> cria um botão clicavel. O atributo type indica o tipo do botão nesse caso o submit indica que o botão vai enviar o formulário -->
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+        </section>
+
+        <section>
+            <!-- A tag <table> cria uma tabela para organizar dados em linhas e colunas. 
+                O atributo border é usado apenas para mostrar as boras de forma simples -->
+
+            <table border="1">
+                <!-- A tag <caption> define o título ou legenda da tabela.
+                    Ela aparece logo acima e serve para descrever o conteúdo da tabela.  -->
+                <caption>Minhas Habilidades</caption>
+                 <!-- A tag <thead> (table head) agrupa as linhas que formam o cabeçalho da tabela.
+                        Dentro dele, usamos <tr> (table row) para criar uma linha e <th> (table header.
+                            Para definir as células do cabeçalho. -->
+                <thead>
+                    <!-- Cada <tr> cria uma linha na tabela -->
+                    <tr>
+                        <!--Cada <th> representa o titulo de uma coluna  -->
+                        <th>Liguaguem</th>
+                        <th>Principais conteúdos</th>
+                        <th>Nível de dificuldade</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estrutura de páginas, tags, links , listas , formulários e tabelas</td>
+                        <td>Fácil 😉</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Cores, fontes, layouts, responsividade e animações simples.</td>
+                        <td>Médio 🎖️🎖️</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Variáveis, funções, eventos, condicionais e manipulação do DOM</td>
+                        <td>Dificil 🫥🫥🫥</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Variaveis, estruturas de controles e funções</td>
+                        <td>Dificil 😒😒😒</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Redes Sociais</h2>
+            <!-- A tag <p> é uma tag de ancora que cria um link para outras páginas  o href serve para acrescentar este link ao texto. -->
+            <p>
+                Instagram: <a href="https://www.instagram.com/viniy_lm?igsh=MWI2aDJwNzjZE-tDXnG%3D%3D&utm_sour-ce=qr">@viniy_lm</a>
+            </p>
+            <p>
+                Linkedin: <a href="https://www.linkedin.com/in/vin%C3%ADcius-de-araujo-lima-223636176/">@vinícius de Araujo Lima</a>
+            </p>
+            <p>
+                GitHub: <a href="https://github.com/Viniciusllm">@Viniciusllm</a>
+            </p>
+
+        </section>
+
     </main>
     <!--Rodape-->
     <footer>
         <p> &copy;site desenvolvido pela turma de IOT01</p>
     </footer>
-    
+
 </body>
+
 </html>
