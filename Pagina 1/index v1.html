@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <!--Aqui configuramos a escala (tipos de tela) em que o site vai ser exibido-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Víncular/linkar o arquivo de css a nossa página -->
+    <link rel="stylesheet" href="./style.css">
     <!--Titulo da pagina, exibido na guia do site-->
     <title>Quem sou eu!</title>
 </head>
@@ -16,14 +18,25 @@
     <!-- A tag body é usada para trazer as informações que vão aparecer dentro do site-->
     <header>
         <!-- As tags de h são para titulos e elas definem a importancia, o peso, daquele titulo dentro da pagina, eles variam de h1 a h6, onde h1 é o mais importante e o h6 é o menos importante-->
-        <h1>Titulo com h1</h1>
+        <h1>Quem é o Vini?</h1>
         <!-- A tag <p> </p> serve para criar um paragrafo dentro da pagina-->
         <p>Uma página simples para me apresentar o mundo!</p>
     </header>
+    <nav>
+        <!-- Navegação  -->
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#interesses">Interesses</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#redes">Redes Sociais</a></li>
+        </ul>
+    </nav>
     <!--Corpo-->
     <main>
         <!-- As section's criam sessões, particão, dentro do site -->
-        <section>
+        <section id="sobre">
             <h2>Sobre mim</h2>
             <!-- A tag img server para adicionar imagens ao nosso site. Ela vem com duas propriedades:
                 src ==> Server para mostrar o caminho da imagem
@@ -31,7 +44,7 @@
                 widht ==> ajusta a largura da imagem
                 -->
 
-            <img src="https://i.pinimg.com/736x/9d/b1/aa/9db1aa9cea0fae062e8bc6109899f0b1.jpg" alt="taxadd" width="150">
+            <img src="https://i.pinimg.com/1200x/e4/13/49/e41349e22e5ee945095ff746074fda94.jpg" alt="Interstellar" width="400">
             <p>
                 <!-- A tag strong serve para destacar uma palavra -->
                 <!-- A tag br server para quebrar linha -->
@@ -40,7 +53,7 @@
                 um pouco mais sobre mim.
             </p>
         </section>
-        <section>
+        <section id="interesses">
             <h2>Interesses</h2>
             <p>Algumas coisas que me fazem brilhar os olhos:</p>
             <!-- Para criar listas podemos usar as  seguintes tags:
@@ -56,7 +69,7 @@
             </ul>
 
         </section>
-        <section>
+        <section id="objetivos">
             <h2>Objetivos</h2>
             <p>Metas para os proximos meses:</p>
             <ol>
@@ -67,7 +80,7 @@
         </section>
 
 
-        <section>
+        <section id="contatos">
             <form action="#">
                 <h2>Contatos</h2>
                 <p>Preencha o formulário para falar comigo:</p>
@@ -101,14 +114,28 @@
 
                     <label for="mensagem">Mensagem:</label>
                     <br>
-                    <input type="text" name="mensagem" id="mensagem" required>
+                    <!-- <input type="text" name="mensagem" id="mensagem" required> -->
+
+                     <!-- A tag <textarea> cria uma área de texto maior,
+                        permitindo que o usuário digite mensagens longas (como observações ou comentários).
+                        Diferente do <input type="text">, que aceita apenas uma linha,
+                        o <textarea> aceita várias linhas de texto.-->
+                    <textarea             
+                        name="mensagem"
+                        id="mensagem"
+                        rows="4"
+                        cols="30"
+                        required
+                    ></textarea>
+                    <br>
+
                     <br>
                     <!-- A tag <button> cria um botão clicavel. O atributo type indica o tipo do botão nesse caso o submit indica que o botão vai enviar o formulário -->
                     <button type="submit">Enviar mensagem</button>
                 </form>
         </section>
 
-        <section>
+        <section id="habilidades">
             <!-- A tag <table> cria uma tabela para organizar dados em linhas e colunas. 
                 O atributo border é usado apenas para mostrar as boras de forma simples -->
 
@@ -133,29 +160,29 @@
                     <tr>
                         <td>HTML</td>
                         <td>Estrutura de páginas, tags, links , listas , formulários e tabelas</td>
-                        <td>Fácil 😉</td>
+                        <td>Fácil 😍</td>
                     </tr>
                     <tr>
                         <td>CSS</td>
                         <td>Cores, fontes, layouts, responsividade e animações simples.</td>
-                        <td>Médio 🎖️🎖️</td>
+                        <td>Médio 😉😉</td>
                     </tr>
                     <tr>
                         <td>JavaScript</td>
                         <td>Variáveis, funções, eventos, condicionais e manipulação do DOM</td>
-                        <td>Dificil 🫥🫥🫥</td>
+                        <td>Dificil 💀💀💀</td>
                     </tr>
                     <tr>
                         <td>C++</td>
                         <td>Variaveis, estruturas de controles e funções</td>
-                        <td>Dificil 😒😒😒</td>
+                        <td>Dificil ☠️☠️☠️☠️</td>
                     </tr>
                 </tbody>
 
             </table>
         </section>
 
-        <section>
+        <section id="redes">
             <h2>Redes Sociais</h2>
             <!-- A tag <p> é uma tag de ancora que cria um link para outras páginas  o href serve para acrescentar este link ao texto. -->
             <p>
@@ -173,7 +200,7 @@
     </main>
     <!--Rodape-->
     <footer>
-        <p> &copy;site desenvolvido pela turma de IOT01</p>
+        <p> &copy;site desenvolvido por Vinícius IOT01</p>
     </footer>
 
 </body>
