@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-:root{
 
-}
 
 *{
     margin: 0;
@@ -99,8 +97,91 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Cria uma sombra do cabeçalho */
 }
 
+
 nav {
-    background-color: #0f172a; /* cor de fundo do menu de navegação */
-    border-top: 1px solid #1e293b; /* borda superior do menu de navegação 1px(espessura), solid  (o tipo de borda)*/
-    border-bottom: 1px solid #1e293b; /* borda inferior do menu de navegação */
+    background-color: #0f172a;
+    /* bordar superior --> 1px (espessura), solid (o tipo de borda), cor*/
+    border-top: 1px solid #1e293b;
+    /* bordar inferior --> 1px (espessura), solid (o tipo de borda), cor*/
+    border-bottom: 1px solid #1e293b;
+    /* a position define a posição que o elemento vai ser exibido, nesse 
+    caso o sticky deixa o menu fixo no topo
+    */
+    position: sticky;
+    top: 0;
+}
+
+/* alterando a lista que esta dentro do nav */
+nav ul {
+    /* vai deixar os links lado a lado */
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-around;
+    /* remove os pontinhos da lista */
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 50px; /* para deixar as bordas (os cantos) arredondados, usamos border-radius */
+}
+
+nav a:hover{
+    background-color: #00e5ff;
+    color: #000;
+}
+
+/* 
+================================================================================
+ESTRUTURA PRINCIPAL E SEÇÕES
+================================================================================
+*/
+
+main {
+    /* definindo a largura máxima do conteudo */
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/*
+Cada <section> funciona como um card visual
+*/
+
+main > section{
+    background-color: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    box-shadow: 0 0 20px (rgba(0, 229, 255, 0.08));
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* 
+============================================================================================================================
+IMAGENS
+============================================================================================================================
+*/
+
+img{
+    max-width: 100%; /* garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* mantém a proporção da imagem */
+    border-radius: 12px; /* bordas arredondadas */
+    border: 1px solid #1e293b; /* borda da imagem */
+    margin-bottom: 14px; /* espaçamento inferior */
+}
+
+
+/* 
+============================================================================================================================
+FORMULARIO
+============================================================================================================================
+*/
+
+form {
+    /* Espaça todos os campos verticalmente */
+    display: grid; /* usa o grid layout para organizar os elementos do formulário */
+    gap: 12px; /* espaçamento entre os elementos do formulário */
 }

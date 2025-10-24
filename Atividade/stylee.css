@@ -1,0 +1,111 @@
+/* Link da fonte do site! */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo do meu site!*/
+body{
+    background-color: #0F172A;
+    font-family: "Sigmar One", sans-serif;
+    color: #F1FAEE; 
+    line-height: 1.7;
+}
+
+/* Personalizar seleção do texto */
+::selection {
+    background-color: #DF6A2D; 
+    color: #000; 
+}
+
+/* Titulos! */
+h1{
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 2.6rem;
+    color: #DF6A2D;
+    text-shadow: #DF6A2D 0px 0px 20px
+}
+
+h2{
+    font-size: 1.8rem;
+    color: #ED9437;
+    margin-bottom: 10px;
+    line-height: 1.8rem;
+}
+
+/* Paragrafos */
+p{
+    margin-bottom: 13px; 
+    color: #feffff;   
+}
+
+a{
+    color: #DF6A2D; 
+    text-decoration: none; 
+    transition: color 0.2s;  
+}
+
+a:hover{
+    text-shadow: #DF6A2D 0px 0px 15px; 
+    color: #F1FAEE;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient((90deg), #0F172A, #1E293B);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    background-color: #0F172A;
+    border-top: 1px solid #1E293B;
+    border-bottom: #1E293B;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a{
+    color: #F1FAEE;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: #F1FAEE;
+    color: #0F172A;
+}
+
+main{
+    max width: 900px;
+    margin: 30 auto;
+    padding: 0 20px;
+}
+
+main > section{
+    background-color: #1E293B;
+    border: 1px solid #374151;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(223, 106, 45, 0.08);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
